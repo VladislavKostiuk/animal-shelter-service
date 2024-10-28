@@ -1,18 +1,13 @@
-INSERT INTO animal_type (id, name)
-VALUES (1, 'cat'),
-       (2, 'dog'),
-       (3, 'parrot');
-
-INSERT INTO breed (id, name, animal_id)
-VALUES (1, 'Abyssinian', 1),
-       (2, 'Burmilla', 1),
-       (3, 'Korat', 1),
-       (4, 'American Bulldog', 2),
-       (5, 'Chow Chow', 2),
-       (6, 'Indian Spitz', 2),
-       (7, 'Arinae', 3),
-       (8, 'Cacatuidae', 3),
-       (9, 'Microglossini', 3);
+INSERT INTO breed (id, name, animal)
+VALUES (1, 'Abyssinian', 'CAT'),
+       (2, 'Burmilla', 'CAT'),
+       (3, 'Korat', 'CAT'),
+       (4, 'American Bulldog', 'DOG'),
+       (5, 'Chow Chow', 'DOG'),
+       (6, 'Indian Spitz', 'DOG'),
+       (7, 'Arinae', 'PARROT'),
+       (8, 'Cacatuidae', 'PARROT'),
+       (9, 'Microglossini', 'PARROT');
 
 INSERT INTO color(id, name)
 VALUES (1, 'black'),

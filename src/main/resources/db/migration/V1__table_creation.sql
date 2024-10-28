@@ -1,10 +1,3 @@
-CREATE TABLE IF NOT EXISTS animal_type
-(
-    id   BIGSERIAL NOT NULL,
-    name VARCHAR(255),
-    PRIMARY KEY (id)
-);
-
 CREATE TABLE IF NOT EXISTS color
 (
     id        BIGSERIAL NOT NULL,
@@ -16,10 +9,8 @@ CREATE TABLE IF NOT EXISTS breed
 (
     id        BIGSERIAL NOT NULL,
     name      VARCHAR(255),
-    animal_id INT,
-    PRIMARY KEY (id),
-    FOREIGN KEY (animal_id)
-        REFERENCES animal_type (id)
+    animal VARCHAR(255),
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS cat

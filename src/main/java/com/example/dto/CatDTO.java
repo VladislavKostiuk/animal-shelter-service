@@ -7,7 +7,7 @@ public record CatDTO(
   String name,
   LocalDate birthday,
   BreedDTO breed,
-  CatDTO color,
+  ColorDTO color,
   String gender,
   String info
 ) {}
